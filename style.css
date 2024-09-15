@@ -1,50 +1,41 @@
 body {
-    background-color: #0d0d0d;
+    font-family: 'Blade Runner 2049 font', sans-serif;
+    background-color: #121212;
     color: #00ffff;
-    font-family: 'OCR A Std', monospace;
+    margin: 0;
+    padding: 0;
+}
+h1 {
     text-align: center;
+    margin-top: 20px;
 }
-
-header {
-    padding: 20px;
+#buttons {
+    text-align: center;
+    margin: 20px;
 }
-
-.glitch-title {
-    font-size: 3em;
-    position: relative;
-    color: #00ffff;
-    animation: glitch 1s infinite;
-}
-
-@keyframes glitch {
-    0% { text-shadow: 2px 2px #ff00ff; }
-    25% { text-shadow: -2px -2px #ff00ff; }
-    50% { text-shadow: 2px -2px #ff00ff; }
-    75% { text-shadow: -2px 2px #ff00ff; }
-    100% { text-shadow: 0 0 0 #ff00ff; }
-}
-
-button {
-    background-color: #333;
-    color: #00ffff;
-    border: 1px solid #00ffff;
-    padding: 10px 20px;
-    cursor: pointer;
-    animation: buttonGlow 2s infinite;
-}
-
-@keyframes buttonGlow {
-    0% { box-shadow: 0 0 5px #00ffff; }
-    50% { box-shadow: 0 0 20px #00ffff; }
-    100% { box-shadow: 0 0 5px #00ffff; }
-}
-
-.hidden {
+#viewArticles, #postArticle, #articles, #post-section {
     display: none;
 }
-
-#searchBar {
+#post-section {
+    text-align: center;
+}
+div.article {
     width: 80%;
-    padding: 10px;
-    margin: 20px;
+    border: 1px solid #00ffff;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+button {
+    background-color: #00ffff;
+    color: #121212;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #00bcd4;
 }
