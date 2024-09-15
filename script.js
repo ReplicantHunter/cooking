@@ -1,6 +1,6 @@
 const repoOwner = 'ReplicantHunter'; // Replace with your GitHub username
 const repoName = 'cooking';       // Replace with your GitHub repository name
-const personalAccessToken = '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'; // Replace with your GitHub token
+const personalAccessToken = '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'; // Replace with your GitHub token
 
 // Fetch articles from GitHub Issues
 function fetchArticles() {
