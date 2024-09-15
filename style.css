@@ -1,0 +1,50 @@
+body {
+    background-color: #0d0d0d;
+    color: #00ffff;
+    font-family: 'OCR A Std', monospace;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+}
+
+.glitch-title {
+    font-size: 3em;
+    position: relative;
+    color: #00ffff;
+    animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+    0% { text-shadow: 2px 2px #ff00ff; }
+    25% { text-shadow: -2px -2px #ff00ff; }
+    50% { text-shadow: 2px -2px #ff00ff; }
+    75% { text-shadow: -2px 2px #ff00ff; }
+    100% { text-shadow: 0 0 0 #ff00ff; }
+}
+
+button {
+    background-color: #333;
+    color: #00ffff;
+    border: 1px solid #00ffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    animation: buttonGlow 2s infinite;
+}
+
+@keyframes buttonGlow {
+    0% { box-shadow: 0 0 5px #00ffff; }
+    50% { box-shadow: 0 0 20px #00ffff; }
+    100% { box-shadow: 0 0 5px #00ffff; }
+}
+
+.hidden {
+    display: none;
+}
+
+#searchBar {
+    width: 80%;
+    padding: 10px;
+    margin: 20px;
+}
